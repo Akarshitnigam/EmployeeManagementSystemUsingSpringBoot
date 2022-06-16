@@ -19,6 +19,16 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepository eRepo;
 	
+	@GetMapping("/about")
+	public String about() {
+		return "about";
+	}
+	
+	
+	
+	
+	
+	
 	@GetMapping({"/showEmployees","/","/list"})
 	public ModelAndView showEmployees() {
 		
